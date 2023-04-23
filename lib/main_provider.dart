@@ -10,8 +10,8 @@ class MainProvider extends ChangeNotifier{
 
   int get number => _number ;
 
-  void getRandomCounter(){
-    _number = Random().nextInt(10) ;
+  void getcounter(){
+    ++_number ;
     notifyListeners();
   }
 }
