@@ -36,6 +36,12 @@ Widget HomePage(MainProvider provider){
                 },
                 child: Text('add number'),
               ),
+              ElevatedButton(
+                onPressed: () {
+                  provider.getResetNumber() ;
+                },
+                child: Text('Reset number'),
+              ),
             ],
           ),
         ),

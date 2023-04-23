@@ -14,4 +14,9 @@ class MainProvider extends ChangeNotifier{
     ++_number ;
     notifyListeners();
   }
+
+  void getResetNumber(){
+    _number = 0;
+    notifyListeners();
+  }
 }
